@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions, shared designs and ideas
+    url: https://github.com/MIT-CDFG/robotdsl-site/discussions
+    about: Ask how to write something in MobileDSL, show a robot you designed or propose a feature.

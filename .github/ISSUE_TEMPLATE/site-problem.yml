@@ -1,0 +1,25 @@
+name: Site or Studio problem
+description: Something on the project page or in the Studio preview does not work or looks wrong.
+labels: ["bug"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Page
+      placeholder: https://mit-cdfg.github.io/robotdsl-site/studio/
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and result
+      description: What you did, what you expected and what happened. Build, Copilot, exports, uploads and reports need the hosted service, so "compiler offline" in the preview is expected.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Browser and device
+      placeholder: Safari 19, iPhone 15
+    validations:
+      required: true

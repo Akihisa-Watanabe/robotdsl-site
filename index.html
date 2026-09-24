@@ -3,7 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="RobotDSL: domain-specific languages and an LLM copilot for designing robots. MobileDSL is the first release; MobileCopilot Studio lets you design a mobile robot with your own API key.">
+<meta name="description" content="RobotDSL: domain-specific languages and an LLM copilot for designing robots. MobileDSL is the first language; MobileCopilot Studio lets you design a mobile robot with your own API key.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RobotDSL">
+<meta property="og:title" content="RobotDSL: domain-specific languages that compile into working robots">
+<meta property="og:description" content="MobileDSL and MobileCopilot: one program describes the robot, its world, its behavior and its checks; a compiler turns it into a working system. Try the MobileCopilot Studio preview.">
+<meta property="og:url" content="https://mit-cdfg.github.io/robotdsl-site/">
+<meta property="og:image" content="https://mit-cdfg.github.io/robotdsl-site/assets/og_image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MobileCopilot title card with five generated mobile robots">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231f4e8c'/%3E%3Crect x='10' y='10' width='12' height='12' fill='white'/%3E%3C/svg%3E">
 <style>img,video{max-width:100%}[hidden]{display:none!important}</style>
 <title>RobotDSL</title>
@@ -196,9 +206,9 @@
 <section class="hero" id="top">
   <div class="wrap">
     <div class="text">
-      <p class="eyebrow">RobotDSL Team <span class="tag">MobileDSL 1.0 released</span></p>
+      <p class="eyebrow">RobotDSL Team <span class="tag">MobileDSL 1.0</span></p>
       <h1>Domain-specific languages that compile into working robots</h1>
-      <p class="lede">RobotDSL is a family of languages for robot development. One program describes the <b>robot</b>, its <b>world</b>, its <b>behavior</b> and how it is <b>evaluated</b>; a compiler assembles the machine, derives its settings and checks the whole system before anything runs. <b>MobileDSL</b>, for mobile robots, is the first release.</p>
+      <p class="lede">RobotDSL is a family of languages for robot development. One program describes the <b>robot</b>, its <b>world</b>, its <b>behavior</b> and how it is <b>evaluated</b>; a compiler assembles the machine, derives its settings and checks the whole system before anything runs. <b>MobileDSL</b>, for mobile robots, is the first language of the family.</p>
       <div class="cta">
         <a class="btn primary" href="studio/">Open MobileCopilot Studio</a>
         <a class="btn" href="#video">Watch the video</a>
@@ -299,7 +309,7 @@
           </tbody>
         </table>
       </div>
-      <p class="tablecap"><b>Table I.</b> Simulation success and generation effort with and without MobileDSL. Motion response: the robot moves. System execution: the robot completes the actions its own program defines. Higher is better for the first two columns, lower for the rest.</p>
+      <p class="tablecap"><b>Main results (paper Table I).</b> Simulation success and generation effort with and without MobileDSL. Motion response: the robot moves. System execution: the robot completes the actions its own program defines. Higher is better for the first two columns, lower for the rest.</p>
     </div>
     <div>
       <div class="tablewrap">
@@ -315,7 +325,7 @@
           </tbody>
         </table>
       </div>
-      <p class="tablecap"><b>Table III.</b> Removing one module at a time. CoreDSL carries most of the execution-success gain; the other three mainly reduce authored code, tokens and time.</p>
+      <p class="tablecap"><b>Module ablation (paper Table III).</b> Removing one module at a time. CoreDSL carries most of the execution-success gain; the other three mainly reduce authored code, tokens and time.</p>
     </div>
     <figure>
       <img src="assets/fig_generated_designs.webp" width="2198" height="871" alt="Input images and the robot designs generated from them">
@@ -368,12 +378,12 @@
       <div class="card"><span class="status now">MobileCopilot Studio <span>Preview</span></span><h3>Explore the library and try the editors</h3><p>The public preview includes the component library, editors and API-key guide. Build, Copilot, exports, part submissions and design reports need the hosted service, which is not connected yet. Once it is available, bring your own API key to generate and compile a design.</p><span class="how"><a href="studio/">Open the Studio preview</a> · 229 parts to explore</span></div>
       <div class="card"><span class="status build">Component library <span>In development</span></span><h3>Upload a part, we review it, everyone can use it</h3><p>Submit a mesh with its connectors, mass and dimensions. Automatic checks confirm it compiles; a maintainer reviews the preview; approved parts join the shared library with your credit.</p><span class="how">229 components today · STL, DAE, GLB</span></div>
       <div class="card"><span class="status build">Report issue <span>In development</span></span><h3>“Report issue &amp; help us improve”</h3><p>A generated design has a wheel in the wrong place or a footprint that cannot be right? One click sends the program, the compiler log and the render to us, with your note. These cases become the next test set.</p><span class="how">On every generated design</span></div>
-      <div class="card"><span class="status now">Examples <span>Available</span></span><h3>Programs to start from</h3><p>The robots, worlds and tasks from the benchmark, with the compiler output for each.</p><span class="how">Ships with MobileDSL 1.0</span></div>
+      <div class="card"><span class="status">Examples <span>Not yet public</span></span><h3>Programs to start from</h3><p>The robots, worlds and tasks from the benchmark, with the compiler output for each.</p><span class="how">Release announced in <a href="https://github.com/MIT-CDFG/robotdsl-site/discussions">Discussions</a></span></div>
       <div class="card"><span class="status now">Discussions <span>Open</span></span><h3>Ask, show, compare</h3><p>A public hub for questions, shared designs and announcements, tied to the releases.</p><span class="how"><a href="https://github.com/MIT-CDFG/robotdsl-site/discussions">GitHub Discussions</a> · <a href="https://github.com/MIT-CDFG/robotdsl-site/issues">Issues</a></span></div>
       <div class="card"><span class="status">Next languages <span>Planned</span></span><h3>Beyond mobile robots</h3><p>MobileDSL is the first member of the family. Manipulation and legged platforms are in design; the compiler's component model is built to be shared across them.</p><span class="how">RobotDSL roadmap</span></div>
     </div>
     <div class="road" aria-label="Roadmap">
-      <div class="done"><span class="st">Released</span><span>MobileDSL 1.0: the four modules, the compiler, the component library and the benchmark examples.</span></div>
+      <div class="done"><span class="st">Complete</span><span>MobileDSL 1.0: the four modules, the compiler, the component library and the benchmark examples behind the paper's results. The compiler will be offered as a hosted service; its sources are not public.</span></div>
       <div class="now"><span class="st">In development</span><span>MobileCopilot Studio with your own API key (preview online); component uploads with review; “report issue” on generated designs.</span></div>
       <div class="done"><span class="st">Open</span><span>Public discussions and issues for questions, shared designs, announcements and feedback.</span></div>
       <div><span class="st">Planned</span><span>A documentation site and simulation runs in the browser.</span></div>
